@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Categories";
+    Layout = "~/Views/Shared/_LayoutOgani.cshtml";
+}
+
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<Category>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="col-12 ">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Products</h6>
+        <a asp-action="Create" class="btn btn-primary">+ Add new product</a>
+        <div class="table-responsive">
+            <p class="text-danger my-2">@TempData["Message"]</p>
+            <table class="table w-50 text-black">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Category name</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@item.CateId</th>
+                            <td>@item.CateName</td>
+
+
+                            <td>
+                                <a asp-action="Edit" asp-route-CateId="@item.CateId" class="me-4"><i class="fa-solid fa-arrows-rotate"></i></a>
+                                <a asp-action="Delete" asp-route-CateId="@item.CateId"><i class="fa-solid fa-trash-can" style="width: 24px; height: 24px"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class=" col-6 text-center">
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination justify-content-center">
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }),
+                             new PagedListRenderOptions
+                    {
+                        LiElementClasses = new string[] { "page-item" },
+                        PageClasses = new string[] { "page-link" }
+                    })
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+

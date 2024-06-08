@@ -1,0 +1,30 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model OganiAdmin.Models.Category
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutOgani.cshtml";
+}
+
+<h4>Category</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4 ms-lg-3">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CateName" class="control-label"></label>
+                <input asp-for="CateName" class="form-control" />
+                <span asp-validation-for="CateName" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-lg-2">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="col-md-4 ms-lg-3 mt-lg-2">
+    <a asp-action="Index">Back to List</a>
+</div>
+
