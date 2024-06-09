@@ -17,63 +17,67 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OganiAdmin
 build_property.RootNamespace = OganiAdmin
-build_property.ProjectDir = D:\PTUDTMDT\OganiAdmin\OganiAdmin\
+build_property.ProjectDir = D:\BTLTMDT\OganiAdmin\OganiAdmin\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\PTUDTMDT\OganiAdmin\OganiAdmin
+build_property.MSBuildProjectDirectory = D:\BTLTMDT\OganiAdmin\OganiAdmin
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Categories/Create.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Categories/Edit.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Categories/Index.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Home/Categories.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Home/Categories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Home/Index.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Home/Privacy.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Home/Products.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Home/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Shared/Error.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Shared/_LayoutOgani.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Shared/_LayoutOgani.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRPZ2FuaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/_ViewImports.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/_ViewStart.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTUDTMDT/OganiAdmin/OganiAdmin/Views/Shared/_Layout.cshtml]
+[D:/BTLTMDT/OganiAdmin/OganiAdmin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-tka95s3qx0
