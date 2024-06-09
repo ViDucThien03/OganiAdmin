@@ -70,8 +70,7 @@
               "RelativeToolTip": "OganiAdmin\\Views\\Shared\\_LayoutOgani.cshtml",
               "ViewState": "AQIAAIoAAAAAAAAAAAAAAJoAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T04:11:09.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T04:11:09.449Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "OganiAdmin\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T04:04:27.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T04:04:27.559Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "OganiAdmin\\Models\\Authentication\\Authentication.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T03:57:43.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T03:57:43.187Z"
             },
             {
               "$type": "Document",
@@ -109,8 +106,7 @@
               "RelativeToolTip": "OganiAdmin\\Program.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAABsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T17:06:22.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-08T17:06:22.433Z"
             },
             {
               "$type": "Document",
@@ -122,8 +118,7 @@
               "RelativeToolTip": "OganiAdmin\\Views\\Login\\Login.cshtml",
               "ViewState": "AQIAAEgAAAAAAAAAAAAcwFQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-08T17:01:52.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-08T17:01:52.859Z"
             },
             {
               "$type": "Document",
@@ -133,7 +128,7 @@
               "RelativeDocumentMoniker": "OganiAdmin\\Controllers\\LoginController.cs",
               "ToolTip": "D:\\BTLTMDT\\OganiAdmin\\OganiAdmin\\Controllers\\LoginController.cs",
               "RelativeToolTip": "OganiAdmin\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA/AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T15:36:13.852Z",
               "EditorCaption": ""
