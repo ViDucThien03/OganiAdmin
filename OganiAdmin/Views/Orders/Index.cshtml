@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Orders";
+    Layout = "~/Views/Shared/_LayoutOgani.cshtml";
+}
+
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<OganiAdmin.Models.Order>
+
+<div class="col-sm-12 col-xl-12">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Orders</h6>
+        <a asp-action="ShowBestSeller" asp-controller="Orders" asp-route-topN="3" class="btn btn-primary">Best Seller Products</a>
+        <a asp-action="ShowPoorlySeller" asp-controller="Orders" asp-route-topN="3" class="btn btn-primary">Poorly Seller Products</a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Order Date</th>
+                    <th scope="col">Total Price</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Ship State</th>
+                    <th scope="col">Payment Method</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.OrderId</th>
+                        <td>@item.OrderDate</td>
+                        <td>@item.OrderTotalprice</td>
+                        <td>@item.Cus?.CusName</td>
+                        <td>
+                            <form asp-action="UpdateShipState" method="post">
+                                <input type="hidden" name="shipId" value="@item.Ship?.ShipId" />
+                                <select name="newState" class="form-select" aria-label="Default select example" onchange="this.form.submit()">
+                                   
+                                    <option selected>@item.Ship?.ShipState</option>
+                                    @if (@item.Ship?.ShipState != "Delevering")
+                                    {
+                                        <option value="Delevering">Delevering</option>
+                                    }
+
+                                    @if (@item.Ship?.ShipState != "Fulfilled")
+                                    {
+                                        <option value="Fulfilled">Fulfilled</option>
+                                    }
+                                    @if (@item.Ship?.ShipState != "Preparing")
+                                    {
+                                        <option value="Preparing">Preparing</option>
+                                    }
+                                    @if (@item.Ship?.ShipState != "Rejected")
+                                    {
+                                        <option value="Rejected">Rejected</option>
+                                    }
+                                   
+                                    
+                                </select>
+                            </form>
+                        </td>
+                        
+                        <td>
+                           @item.Payment?.PaymentMethod
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12 text-center">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }),
+                         new PagedListRenderOptions
+                {
+                    LiElementClasses = new string[] { "page-item" },
+                    PageClasses = new string[] { "page-link" }
+                })
+            </ul>
+        </nav>
+    </div>
+</div>

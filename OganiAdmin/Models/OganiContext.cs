@@ -216,7 +216,7 @@ public partial class OganiContext : DbContext
                 .HasColumnType("decimal(10, 2)")
                 .HasColumnName("product_price");
             entity.Property(e => e.ProductQuantity).HasColumnName("product_quantity");
-
+            entity.Property(e => e.SellQuantity).HasColumnName("product_sellquantity");
             entity.HasOne(d => d.Cate).WithMany(p => p.Products)
                 .HasForeignKey(d => d.CateId)
                 .HasConstraintName("FK__Product__cate_id__4CA06362");
