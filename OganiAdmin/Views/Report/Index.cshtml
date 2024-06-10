@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    var dailyReport = ViewData["DailyReport"] as IEnumerable<dynamic>;
+    var monthlyReport = ViewData["MonthlyReport"] as IEnumerable<dynamic>;
+    var yearlyReport = ViewData["YearlyReport"] as IEnumerable<dynamic>;
+    Layout = "~/Views/Shared/_LayoutOgani.cshtml";
+}
+
+<h1>Daily Report</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Order Count</th>
+            <th>Total Revenue</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in dailyReport)
+        {
+            <tr>
+                <td>@item.OrderDate.ToShortDateString()</td>
+                <td>@item.OrderCount</td>
+                <td>@item.TotalRevenue.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h1>Monthly Report</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Month</th>
+            <th>Order Count</th>
+            <th>Total Revenue</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in monthlyReport)
+        {
+            <tr>
+                <td>@item.OrderYear</td>
+                <td>@item.OrderMonth</td>
+                <td>@item.OrderCount</td>
+                <td>@item.TotalRevenue.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h1>Yearly Report</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Order Count</th>
+            <th>Total Revenue</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in yearlyReport)
+        {
+            <tr>
+                <td>@item.OrderYear</td>
+                <td>@item.OrderCount</td>
+                <td>@item.TotalRevenue.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>

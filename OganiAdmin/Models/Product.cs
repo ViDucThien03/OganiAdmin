@@ -20,7 +20,7 @@ public partial class Product
     public string? ProductImg { get; set; }
 
     public DateOnly? ProductAdd { get; set; }
-
+    public int? SellQuantity { get; set; }
     public int? CateId { get; set; }
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
