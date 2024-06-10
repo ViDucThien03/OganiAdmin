@@ -25,6 +25,11 @@ namespace OganiAdmin.Controllers
                     HttpContext.Session.SetString("UserName", cus.CusEmail.ToString());
                     return RedirectToAction("Index", "Home");
                 }
+                else
+                {
+                    // Thêm thông báo lỗi vào ModelState
+                    ModelState.AddModelError("", "Sai tài khoản hoặc mật khẩu.");
+                }
             }
             return View();
         }
