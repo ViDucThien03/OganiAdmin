@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     var dailyReport = ViewData["DailyReport"] as IEnumerable<dynamic>;
     var monthlyReport = ViewData["MonthlyReport"] as IEnumerable<dynamic>;
@@ -8,7 +7,10 @@
 }
 
 <h1>Daily Report</h1>
-<table class="table">
+<a asp-controller="ExportReport" asp-action="ExportDailyReport" class="btn btn-primary"><i class="fa fa-download me-2"></i>Export Daily Report</a>
+
+
+<table id="tblDailyReport" class="table">
     <thead>
         <tr>
             <th>Date</th>
@@ -29,7 +31,8 @@
 </table>
 
 <h1>Monthly Report</h1>
-<table class="table">
+<a asp-controller="ExportReport" asp-action="ExportMonthlyReport" class="btn btn-primary"><i class="fa fa-download me-2"></i>Export Monthly Report</a>
+<table id="tblMonthlyReport" class="table">
     <thead>
         <tr>
             <th>Year</th>
@@ -52,7 +55,8 @@
 </table>
 
 <h1>Yearly Report</h1>
-<table class="table">
+<a asp-controller="ExportReport" asp-action="ExportYearlyReport" class="btn btn-primary"><i class="fa fa-download me-2"></i>Export Yearly Report</a>
+<table id="tblYearlyReport" class="table">
     <thead>
         <tr>
             <th>Year</th>

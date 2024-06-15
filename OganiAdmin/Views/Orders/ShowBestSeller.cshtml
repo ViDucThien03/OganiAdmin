@@ -10,14 +10,14 @@
 @if (Model.Any())
 {
     <div class="col-12">
-        <div>
-            <a asp-action="ShowBestSeller" asp-route-topN="3" class="btn btn-primary">Top 3</a>
-            <a asp-action="ShowBestSeller" asp-route-topN="5" class="btn btn-primary">Top 5</a>
-            <a asp-action="ShowBestSeller" asp-route-topN="10" class="btn btn-primary">Top 10</a>
-        </div>
+        
         <div class="bg-light rounded h-100 p-4">
-            <h6 class="mb-4">Products</h6>
-            <a class="btn btn-primary">+ Add new product</a>
+            <div>
+                <a asp-action="ShowBestSeller" asp-route-topN="3" class="btn btn-primary">Top 3</a>
+                <a asp-action="ShowBestSeller" asp-route-topN="5" class="btn btn-primary">Top 5</a>
+                <a asp-action="ShowBestSeller" asp-route-topN="10" class="btn btn-primary">Top 10</a>
+            </div>
+            
             <div class="table-responsive">
                 <table class="table">
                     <thead>
@@ -41,7 +41,6 @@
                                 <td>@product.ProductPrice</td>
                                 <td>@product.SellProduct</td>
                                 <td>@product.Cate.CateName</td>
-
                                 <td>
                                     <a href="#" class="me-4"><i class="fa-solid fa-arrows-rotate"></i></a>
                                     <a href="#"><i class="fa-solid fa-trash-can" style="width: 24px; height: 24px"></i></a>
