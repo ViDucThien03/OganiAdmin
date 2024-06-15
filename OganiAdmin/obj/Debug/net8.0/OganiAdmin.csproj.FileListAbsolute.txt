@@ -253,3 +253,11 @@ D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\runtimes\win\lib\net6.0\Syste
 D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\X.PagedList.dll
 D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
 D:\PTUDTMDT\OganiAdmin\OganiAdmin\obj\Debug\net8.0\OganiAdmin.MvcApplicationPartsAssemblyInfo.cs
+D:\PTUDTMDT\OganiAdmin\OganiAdmin\obj\Debug\net8.0\OganiAdmin.sourcelink.json
+D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\ClosedXML.dll
+D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\ExcelNumberFormat.dll
+D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\Irony.dll
+D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\SixLabors.Fonts.dll
+D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\System.IO.Packaging.dll
+D:\PTUDTMDT\OganiAdmin\OganiAdmin\bin\Debug\net8.0\XLParser.dll
