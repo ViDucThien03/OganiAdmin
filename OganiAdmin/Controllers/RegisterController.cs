@@ -12,7 +12,7 @@ namespace OganiAdmin.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Register(Customer cus)
+        public IActionResult Register(Models.Customer cus)
         {
             if (ModelState.IsValid)
             {

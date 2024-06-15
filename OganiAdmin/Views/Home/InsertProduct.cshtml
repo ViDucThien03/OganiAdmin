@@ -1,0 +1,70 @@
+﻿@model OganiAdmin.Models.Product
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "InsertProduct";
+    Layout = "~/Views/Shared/_LayoutOgani.cshtml";
+}
+
+<h1>InsertProduct</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="InsertProduct">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductDesc" class="control-label"></label>
+                <input asp-for="ProductDesc" class="form-control" />
+                <span asp-validation-for="ProductDesc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductPrice" class="control-label"></label>
+                <input asp-for="ProductPrice" class="form-control" />
+                <span asp-validation-for="ProductPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductQuantity" class="control-label"></label>
+                <input asp-for="ProductQuantity" class="form-control" />
+                <span asp-validation-for="ProductQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SellProduct" class="control-label"></label>
+                <input asp-for="SellProduct" class="form-control" />
+                <span asp-validation-for="SellProduct" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductExp" class="control-label"></label>
+                <input asp-for="ProductExp" class="form-control" type="date" />
+                <span asp-validation-for="ProductExp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductImg" class="control-label"></label>
+                <input asp-for="ProductImg" class="form-control" />
+                <span asp-validation-for="ProductImg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductAdd" class="control-label"></label>
+                <input asp-for="ProductAdd" class="form-control" type="date" />
+                <span asp-validation-for="ProductAdd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CateId" class="control-label"></label>
+                <select asp-for="CateId" class="form-control" asp-items="ViewBag.CateId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Products">Back to List</a>
+</div>
+

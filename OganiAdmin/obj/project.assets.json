@@ -7897,23 +7897,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nxtha\\.nuget\\packages\\": {},
+    "C:\\Users\\ADMIN KH\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BTLTMDT\\OganiAdmin\\OganiAdmin\\OganiAdmin.csproj",
+      "projectUniqueName": "F:\\Nam3_2\\PTUD\\Admin\\OganiAdmin\\OganiAdmin\\OganiAdmin.csproj",
       "projectName": "OganiAdmin",
-      "projectPath": "D:\\BTLTMDT\\OganiAdmin\\OganiAdmin\\OganiAdmin.csproj",
-      "packagesPath": "C:\\Users\\nxtha\\.nuget\\packages\\",
-      "outputPath": "D:\\BTLTMDT\\OganiAdmin\\OganiAdmin\\obj\\",
+      "projectPath": "F:\\Nam3_2\\PTUD\\Admin\\OganiAdmin\\OganiAdmin\\OganiAdmin.csproj",
+      "packagesPath": "C:\\Users\\ADMIN KH\\.nuget\\packages\\",
+      "outputPath": "F:\\Nam3_2\\PTUD\\Admin\\OganiAdmin\\OganiAdmin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nxtha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN KH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7992,7 +7992,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
