@@ -34,7 +34,7 @@ namespace OganiAdmin.Controllers
         public IActionResult ShowBestSeller(int topN = 3)
         {
             var bestSellers = data.Products.Include(o => o.Cate)
-                                           .OrderByDescending(p => p.SellQuantity)
+                                           .OrderByDescending(p => p.SellProduct)
                                            .Take(topN)
                                            .ToList();
             return View(bestSellers);
@@ -42,7 +42,7 @@ namespace OganiAdmin.Controllers
         public IActionResult ShowPoorlySeller(int topN = 3)
         {
             var bestSellers = data.Products.Include(o => o.Cate)
-                                           .OrderBy(p => p.SellQuantity)
+                                           .OrderBy(p => p.SellProduct)
                                            .Take(topN)
                                            .ToList();
             return View(bestSellers);

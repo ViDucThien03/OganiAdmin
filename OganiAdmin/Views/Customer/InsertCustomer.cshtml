@@ -1,0 +1,52 @@
+﻿@model OganiAdmin.Models.Customer
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "InsertCustomer";
+    Layout = "~/Views/Shared/_LayoutOgani.cshtml";
+}
+
+<h1>InsertCustomer</h1>
+
+<h4>Customer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="InsertCustomer">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CusName" class="control-label"></label>
+                <input asp-for="CusName" class="form-control" />
+                <span asp-validation-for="CusName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CusEmail" class="control-label"></label>
+                <input asp-for="CusEmail" class="form-control" />
+                <span asp-validation-for="CusEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CusPassword" class="control-label"></label>
+                <input asp-for="CusPassword" class="form-control" />
+                <span asp-validation-for="CusPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CusAddress" class="control-label"></label>
+                <input asp-for="CusAddress" class="form-control" />
+                <span asp-validation-for="CusAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CusPhone" class="control-label"></label>
+                <input asp-for="CusPhone" class="form-control" />
+                <span asp-validation-for="CusPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Customers">Back to List</a>
+</div>
+

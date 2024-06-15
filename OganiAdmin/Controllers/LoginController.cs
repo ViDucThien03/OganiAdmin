@@ -15,7 +15,7 @@ namespace OganiAdmin.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Login(Customer cus)
+        public IActionResult Login(Models.Customer cus)
         {
             if(HttpContext.Session.GetString("UserName")==null)
             {
