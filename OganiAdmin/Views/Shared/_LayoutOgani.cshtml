@@ -64,6 +64,7 @@
                     <a asp-action="Products" asp-controller="Home" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Products</a>
                     <a asp-action="Index" asp-controller="Orders" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Order</a>
                     <a asp-action="Index" asp-controller="Report" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Report</a>
+                    
                 </div>
             </nav>
         </div>
@@ -177,7 +178,7 @@
     <script src="~/assets/lib/tempusdominus/js/moment.min.js"></script>
     <script src="~/assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="~/assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
+    @RenderSection("scripts", required: false)
     <!-- Template Javascript -->
     <script src="~/assets/js/main.js"></script>
 </body>

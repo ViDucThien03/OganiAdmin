@@ -3,6 +3,7 @@ using OganiAdmin.Models;
 using X.PagedList;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 
 namespace OganiAdmin.Controllers
 {
@@ -79,9 +80,24 @@ namespace OganiAdmin.Controllers
                 TempData["Message"] = "Xóa không thành công! Không tìm thấy danh mục.";
                 return RedirectToAction("Index");
             }
-            data.Categories.Remove(category);
-            data.SaveChanges();
-            TempData["Message"] = "Xóa thành công!";
+            try
+            {
+                data.Categories.Remove(category);
+                data.SaveChanges();
+                TempData["Message"] = "Xóa thành công!";
+            }
+            catch (DbUpdateException ex)
+            {
+                
+                if (ex.InnerException is SqlException sqlEx && sqlEx.Number == 547)
+                {
+                    TempData["Message"] = "Không thể xóa danh mục này vì có sản phẩm liên quan.";
+                }
+                else
+                {
+                    TempData["Message"] = "Xóa không thành công! Đã xảy ra lỗi.";
+                }
+            }
             return RedirectToAction("Index");
         }
     }

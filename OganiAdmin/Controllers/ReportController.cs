@@ -12,15 +12,17 @@ namespace OganiAdmin.Controllers
         {
             var dailyReport = await data.Orders
                 .GroupBy(o => o.OrderDate.Value.Date)
+                //.GroupBy(o => new { o.OrderDate.Value.Date })
                 .Select(g => new
                 {
                     OrderDate = g.Key,
                     OrderCount = g.Count(),
+                   
                     TotalRevenue = g.Sum(o => o.OrderTotalprice)
                 })
                 .OrderBy(r => r.OrderDate)
                 .ToListAsync();
-
+              
             var monthlyReport = await data.Orders
                 .GroupBy(o => new { o.OrderDate.Value.Year, o.OrderDate.Value.Month })
                 .Select(g => new
