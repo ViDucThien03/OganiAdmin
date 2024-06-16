@@ -7,10 +7,8 @@
 @model X.PagedList.IPagedList<OganiAdmin.Models.Order>
 
 <div class="col-sm-12 col-xl-12">
-    <div class="bg-light rounded h-100 p-4">
-        <h6 class="mb-4">Orders</h6>
-        <a asp-action="ShowBestSeller" asp-controller="Orders" asp-route-topN="3" class="btn btn-primary">Best Seller Products</a>
-        <a asp-action="ShowPoorlySeller" asp-controller="Orders" asp-route-topN="3" class="btn btn-primary">Poorly Seller Products</a>
+    <div class="bg-light rounded h-100 p-4 vh-100">
+        <h3 class="mb-4">Orders</h3>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -54,8 +52,7 @@
                                     {
                                         <option value="Rejected">Rejected</option>
                                     }
-                                   
-                                    
+                                  
                                 </select>
                             </form>
                         </td>
@@ -63,6 +60,7 @@
                         <td>
                            @item.Payment?.PaymentMethod
                         </td>
+                        <td><a asp-action="OrderDetails" asp-controller="Orders" asp-route-orderId="@item.OrderId">Show Order Detail</a></td>
                     </tr>
                 }
             </tbody>

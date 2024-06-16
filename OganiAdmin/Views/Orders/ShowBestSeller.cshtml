@@ -5,13 +5,13 @@
     Layout = "~/Views/Shared/_LayoutOgani.cshtml";
 }
 
-<h1>Best Sellers</h1>
+
 
 @if (Model.Any())
 {
     <div class="col-12">
-        
-        <div class="bg-light rounded h-100 p-4">
+        <h1>Best Sellers</h1>
+        <div class="bg-light rounded h-100 p-4 vh-100">
             <div>
                 <a asp-action="ShowBestSeller" asp-route-topN="3" class="btn btn-primary">Top 3</a>
                 <a asp-action="ShowBestSeller" asp-route-topN="5" class="btn btn-primary">Top 5</a>
@@ -39,7 +39,7 @@
                                 <td>@product.ProductQuantity</td>
                                 <td>@product.ProductDesc</td>
                                 <td>@product.ProductPrice</td>
-                                <td>@product.SellQuantity</td>
+                                <td>@product.SellProduct</td>
                                 <td>@product.Cate.CateName</td>
                                 <td>
                                     <a href="#" class="me-4"><i class="fa-solid fa-arrows-rotate"></i></a>
